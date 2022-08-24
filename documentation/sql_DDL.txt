@@ -1,0 +1,12 @@
+create table price.price
+(
+    id           bigserial
+        constraint price_pk
+            primary key,
+    product_code varchar(128) not null,
+    number       integer      not null,
+    depart       integer      not null,
+    begin_date   date         not null,
+    end_date     date         not null,
+    value        bigint       not null
+);

@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "d444f0ab-6d87-49b7-abf8-9f3fc8e4c44f",
+		"name": "PriceAdjusterAPP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18648216"
+	},
+	"item": [
+		{
+			"name": "get all data (export to CSV file)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/merger/prices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"merger",
+						"prices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload source data to merge data (upload by CSV file)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/cwx972502/Downloads/sample_for_upload.csv",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/merger/prices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"merger",
+						"prices"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
